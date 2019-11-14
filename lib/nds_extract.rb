@@ -6,7 +6,6 @@ require 'directors_database'
 # { directorOne => allTheMoneyTheyMade, ... }
 
 def directors_totals(nds)
-  pp nds
   result = {}
   i = 0
   while i < nds.count do
@@ -21,7 +20,7 @@ end
 def gross_for_director(director_data)
   i = 0
   tot = 0
-  while i < director_data.count do
+  while i < director_data[:movies].count do
     tot += director_data[:movies][i][:worldwide_gross]
     i += 1
   end
