@@ -27,4 +27,3 @@ def gross_for_director(director_data)
   end
   return tot
 end
-directors_totals(directors_database)
