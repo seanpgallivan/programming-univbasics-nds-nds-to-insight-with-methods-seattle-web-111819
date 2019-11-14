@@ -24,6 +24,7 @@ def gross_for_director(director_data)
   puts director_data[:name]
   while i < director_data.count do
     tot += director_data[:movies][i][:worldwide_gross]
+    puts tot
     i += 1
   end
   puts tot
