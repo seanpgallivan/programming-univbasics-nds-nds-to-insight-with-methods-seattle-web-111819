@@ -6,6 +6,7 @@ require 'directors_database'
 # { directorOne => allTheMoneyTheyMade, ... }
 
 def directors_totals(nds)
+  pp nds
   result = {}
   i = 0
   while i < nds.count do
@@ -26,4 +27,4 @@ def gross_for_director(director_data)
   end
   return tot
 end
-pp directors_database
+directors_totals(directors_database)
